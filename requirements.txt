@@ -1,0 +1,5 @@
+# Runtime dependencies for git_ratings_analyzer.py
+GitPython
+pandas
+matplotlib
+
