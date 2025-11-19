@@ -2,13 +2,6 @@
 
 This program analyzes commit history from a specified Git repository, calculates Elo ratings for contributors based on their activity, and visualizes the ratings over time using animated plots.
 
-## Features
-
-- **Elo Rating Calculation**: Uses the Elo rating system to rank contributors based on their commit activity.
-- **Dynamic Visualization**: Animates Elo ratings over time, allowing for a clear view of contributions and changes in ratings.
-- **Customizable Settings**: Configure the repository path, branch, Elo parameters, inactivity thresholds, ranking mode, and more.
-- **Interactive Start Mode**: If you run the script without any command-line arguments, a small UI (or text prompts as a fallback) lets you enter the main parameters interactively.
-
 ## Requirements
 
 - Python 3.x
@@ -40,7 +33,7 @@ python git_ratings_analyzer.py
 
 ### Command-line mode
 
-You can still use the script as a classic CLI tool by providing arguments. For example:
+You can also use the script as a CLI tool by providing arguments. For example:
 
 ```bash
 python git_ratings_analyzer.py \
@@ -78,12 +71,6 @@ python git_ratings_analyzer.py \
 - `--ylim_max`: Optional fixed upper y-axis limit for the Elo plot.
 - `--animation_interval_ms`: Animation interval in milliseconds (default: `80`).
 - `--top_mode`: Ranking mode for the top contributors box: `max` (highest Elo ever) or `current` (current Elo).
-
-## Example
-
-```bash
-python git_ratings_analyzer.py --repo_path /path/to/your/repo --branch main --days_to_show 365
-```
 
 ## License
 
