@@ -62,8 +62,8 @@ python git_ratings_analyzer.py \
 
   ```json
   {
-    "EnZaXD": "EnZaXD",
-    "FlorianMichael": "EnZaXD"
+    "ExampleDude": "Example Dude",
+    "OldName": "Example Dude"
   }
   ```
 
