@@ -1,6 +1,7 @@
 # Elo Ratings for Git Contributors
 
-This program analyzes commit history from a specified Git repository, calculates Elo ratings for contributors based on their activity, and visualizes the ratings over time using animated plots.
+This program analyzes commit history from a specified Git repository, calculates Elo ratings for contributors based on
+their activity, and visualizes the ratings over time using animated plots.
 
 ## Requirements
 
@@ -22,13 +23,13 @@ python git_ratings_analyzer.py
 ```
 
 - If a graphical environment and `tkinter` are available, a small window opens where you can set:
-  - Repository path
-  - Branch
-  - Elo parameters (initial rating, K-factor)
-  - Inactivity and stagnant-Elo thresholds
-  - Days to show
-  - Number of top contributors
-  - Name mapping file
+    - Repository path
+    - Branch
+    - Elo parameters (initial rating, K-factor)
+    - Inactivity and stagnant-Elo thresholds
+    - Days to show
+    - Number of top contributors
+    - Name mapping file
 - If `tkinter` is not available, the script falls back to simple text prompts in the terminal.
 
 ### Command-line mode
@@ -58,7 +59,8 @@ python git_ratings_analyzer.py \
 - `--stagnant_elo_threshold`: Days at 1500 before hiding a contributor (default: `30`).
 - `--days_to_show`: Number of days of data to show in the animation window (default: `365`).
 - `--top_contributors_count`: Number of top contributors to display (default: `5`).
-- `--name_mapping_file`: Path to a JSON file for author names, resolved relative to the current working directory. The JSON file must be a simple object mapping raw author names to canonical names, e.g.:
+- `--name_mapping_file`: Path to a JSON file for author names, resolved relative to the current working directory. The
+  JSON file must be a simple object mapping raw author names to canonical names, e.g.:
 
   ```json
   {
@@ -72,12 +74,13 @@ python git_ratings_analyzer.py \
 - `--animation_interval_ms`: Animation interval in milliseconds (default: `80`).
 - `--top_mode`: Ranking mode for the top contributors box: `max` (highest Elo ever) or `current` (current Elo).
 
-## License
-
-This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 - [Elo Rating System](https://en.wikipedia.org/wiki/Elo_rating_system)
 - [GitPython](https://gitpython.readthedocs.io/)
 - [Matplotlib](https://matplotlib.org/)
+
+## Contact
+
+- Issues: https://github.com/florianreuth/EloGitCalculator/issues
+- Discord: https://florianreuth.de/discord
